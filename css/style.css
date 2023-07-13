@@ -1,4 +1,82 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: disney-font;
+}
+@font-face {
+    font-family: disney-font;
+    src: url(../fonts/alte_haas_grotesk/AlteHaasGroteskRegular.ttf);
+}
+
+
+/* HEADER */
+
+.grids{
+    display: grid;
+    grid-template-areas: 
+    "nav nav nav"
+    "parques parques parques"
+    "entradas entradas entradas"
+    "planes planes hoteles"
+    "noticias mdw mdw"
+    "footer footer footer"
+    ;
+    grid-template-columns: repeat(6 1fr);
+    grid-template-rows: 1.8% 1fr 1fr 1fr 1fr 150px;
+}
+
+
+/* HEADER_NAMING_GRIDS */
+
+.nav{
+    grid-area: nav;
+    background-color: aqua;
+    text-align: center;
+}
+
+.parques{
+    grid-area: parques;
+    background-color: gray;
+    text-align: center;
+    color: white;
+}
+
+.entradas{
+    grid-area: entradas;
+    background-color: rgb(138, 138, 248);
+    text-align: center;
+}
+
+.planes-de-comidas{
+    grid-area: planes;
+    background-color: burlywood;
+    text-align: center;
+}
+
+.hoteles{
+    grid-area: hoteles;
+    text-align: center;
+    background-color: rgb(174, 233, 119);
+}
+
+.noticias{
+    grid-area: noticias;
+    background-color: rgb(72, 151, 151);
+    text-align: center;
+}
+
+.my-disney-world{
+    grid-area: mdw;
+    background-color: darkkhaki;
+    text-align: center;
+}
+
+.footer{
+    grid-area: footer;
+    background-color: rgb(254, 249, 179);
+    text-align: center;
+}
+
+.img-parques{
+    height: 450px;
 }
