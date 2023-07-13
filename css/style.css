@@ -22,21 +22,35 @@
     "footer footer footer"
     ;
     grid-template-columns: repeat(6 1fr);
-    grid-template-rows: 1.8% 1fr 1fr 1fr 1fr 150px;
+    grid-template-rows: 3% 0.7fr 0.7fr 1fr 1fr 150px;
 }
 
 
 /* HEADER_NAMING_GRIDS */
 
-.nav{
+.navbar{
     grid-area: nav;
-    background-color: aqua;
-    text-align: center;
+}
+
+.logo-white{
+    width: 170px;
+}
+
+.form-control{
+    background-color: white;
+}
+
+.form-control:not(:active){
+    background-color: white;
+}
+
+.form-control:active{
+    background-color: white;
 }
 
 .parques{
     grid-area: parques;
-    background-color: gray;
+    background-color: rgb(213, 213, 213);
     text-align: center;
     color: white;
 }
@@ -45,6 +59,7 @@
     grid-area: entradas;
     background-color: rgb(138, 138, 248);
     text-align: center;
+    height: 350px;
 }
 
 .planes-de-comidas{
@@ -79,4 +94,54 @@
 
 .img-parques{
     height: 450px;
+}
+
+.img-entradas{
+    height: 639px;
+    overflow: hidden;
+    align-content: center;
+}
+
+.section{
+    position: relative;
+}
+
+.section_h1_parques{
+    position: absolute;
+    top: 64%;
+    left: 50%;  
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    color: white;
+    padding: 10px;
+}
+
+.section_h1_entradas{
+    position: absolute;
+    top: 110%;
+    left: 50%;  
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    color: white;
+    padding: 10px;
+}
+
+.section_h1_parques:hover{
+    position: absolute;
+    top: 64%;
+    left: 50%; 
+    font-size: 45px; 
+    z-index: 1;
+    color: white;
+    padding: 10px;
+}
+
+.section_h1_entradas:hover{
+    position: absolute;
+    top: 110%;
+    left: 50%;  
+    font-size: 45px;
+    z-index: 1;
+    color: white;
+    padding: 10px;
 }
