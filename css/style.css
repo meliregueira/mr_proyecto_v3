@@ -17,12 +17,14 @@
     "nav nav nav"
     "parques parques parques"
     "entradas entradas entradas"
-    "planes planes hoteles"
-    "noticias mdw mdw"
+    "planes hoteles hoteles"
+    "noticias noticias mdw"
+    "footer footer footer"
     "footer footer footer"
     ;
-    grid-template-columns: repeat(6 1fr);
-    grid-template-rows: 3% 0.7fr 0.7fr 1fr 1fr 150px;
+    grid-template-columns: repeat(3 1fr);
+    grid-template-rows: 3% 0.7fr 0.7fr 1fr 1fr 150px 3%px;
+    height: auto;
 }
 
 
@@ -50,16 +52,15 @@
 
 .parques{
     grid-area: parques;
-    background-color: rgb(213, 213, 213);
+    background-color: rgba(231, 231, 231, 0.929);
     text-align: center;
     color: white;
 }
 
 .entradas{
     grid-area: entradas;
-    background-color: rgb(138, 138, 248);
+    background-color: rgba(231, 231, 231, 0.929);
     text-align: center;
-    height: 350px;
 }
 
 .planes-de-comidas{
@@ -86,20 +87,25 @@
     text-align: center;
 }
 
-.footer{
-    grid-area: footer;
-    background-color: rgb(254, 249, 179);
-    text-align: center;
-}
-
 .img-parques{
     height: 450px;
 }
 
 .img-entradas{
-    height: 639px;
+    max-width: 1200px;
     overflow: hidden;
     align-content: center;
+    align-items: center;
+}
+
+.img-planes{
+    max-width: 700px;
+    overflow: hidden;
+}
+
+.img-hoteles{
+    max-width: 700px;
+    overflow: hidden;
 }
 
 .section{
@@ -108,9 +114,7 @@
 
 .section_h1_parques{
     position: absolute;
-    top: 64%;
     left: 50%;  
-    transform: translate(-50%, -50%);
     z-index: 1;
     color: white;
     padding: 10px;
@@ -118,9 +122,23 @@
 
 .section_h1_entradas{
     position: absolute;
-    top: 110%;
     left: 50%;  
-    transform: translate(-50%, -50%);
+    z-index: 1;
+    color: white;
+    padding: 10px;
+}
+
+.section_h1_planes{
+    position: absolute;
+    left: 15%;  
+    z-index: 1;
+    color: white;
+    padding: 10px;
+}
+
+.section_h1_hoteles{
+    position: absolute;
+    left: 70%;  
     z-index: 1;
     color: white;
     padding: 10px;
@@ -128,7 +146,6 @@
 
 .section_h1_parques:hover{
     position: absolute;
-    top: 64%;
     left: 50%; 
     font-size: 45px; 
     z-index: 1;
@@ -138,10 +155,70 @@
 
 .section_h1_entradas:hover{
     position: absolute;
-    top: 110%;
     left: 50%;  
     font-size: 45px;
     z-index: 1;
     color: white;
     padding: 10px;
+}
+
+.section_h1_planes:hover{
+    position: absolute;
+    left: 15%;  
+    font-size: 45px;
+    z-index: 1;
+    color: white;
+    padding: 10px;
+}
+
+.section_h1_hoteles:hover{
+    position: absolute;
+    left: 70%;  
+    font-size: 45px;
+    z-index: 1;
+    color: white;
+    padding: 10px;
+}
+
+.carousel-caption{
+    font-weight: bold;
+    font-size: medium;
+}
+
+/* FOOTER */
+
+.footer{
+    grid-area: footer;
+    background-color: #1c468e;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+
+.footer_ul-parques{
+    list-style-type: none;
+    color: white;
+    font-size: small;
+}
+
+.footer_div-parques{
+    padding: 1%;
+    color: white;
+    text-align: center;
+}
+
+.footer_legales{
+    display: block;
+    color: white;
+    font-size: x-small;
+}
+
+.footer_list{
+    color: white;
+    text-decoration: none;
+}
+
+.footer_list:hover{
+    font-weight: bold;
 }
