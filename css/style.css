@@ -334,7 +334,7 @@
     font-weight: bold;
 }
 
-/* MDW */
+/* PAGES_MDW */
 
 .div_mdw{
     display: flex;
@@ -387,6 +387,45 @@
     align-items: center;
     justify-content: center;
 }
+
+/* PAGES_HOTELES */
+
+.div-hoteles{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100vw;
+}
+
+.card{
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5%;
+    margin-top: 1%;
+    margin-right: 5%;
+    
+}
+
+.h2-hoteles{
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+}
+
+.a-card{
+    color: black;
+    text-decoration: none;
+}
+
+.a-card:hover{
+    font-weight: bold;
+}
+
+.img-card-hoteles{
+    width: 300px;
+}
+
 
 /* FOOTER */
 
