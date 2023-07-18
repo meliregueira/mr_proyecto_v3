@@ -24,10 +24,6 @@
     "footer footer footer"
     ;
     grid-template-columns: repeat(3 1fr);
-    grid-template-rows: 3% 0.7fr 0.7fr 1fr 1fr 150px 3%px;
-    width: auto;
-    align-items: center;
-    align-content: center;
 }
 
 /* GRIDS_SECTIONS */
@@ -38,7 +34,7 @@
 }
 
 .logo-white{
-    width: 170px;
+    width: 15%;
 }
 
 .form-control{
@@ -57,17 +53,17 @@
     grid-area: parques;
     display: flex;
     align-items: center;
-    justify-content: center;
     background-color: rgba(231, 231, 231, 0.929);
     color: white;
-    width:auto;
+    justify-content: space-evenly;
+    width: 100%;
 }
 
 .entradas{
     grid-area: entradas;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     background-color: rgb(231, 231, 231, 0.929);
     width:auto;
 }
@@ -76,18 +72,16 @@
     grid-area: planes;
     display: flex;
     align-items: center;
-    overflow: hidden;
     background-color: rgb(231, 231, 231, 0.929);
-    max-height: 400px;
+    width: 55%;
 }
 
 .hoteles{
     grid-area: hoteles;
     display: flex;
     align-items: center;
-    overflow: hidden;
     background-color: rgb(231, 231, 231, 0.929);
-    max-height: 400px;
+    width: 45%;
 }
 
 .noticias{
@@ -95,48 +89,53 @@
     display: flex;
     justify-content: center;
     background-color: rgba(231, 231, 231, 0.929);
-    text-align: center;
-    width:auto;
 }
 
 .my-disney-world{
     grid-area: mdw;
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
+    height: 100%;
     background-color:rgb(231, 231, 231, 0.929);
-    text-align: center;
-    height: 420px;
+}
+
+.flex-mobile{
+    display: flex;
+    justify-content: center
+}
+
+.a-mdw-logo{
+    display: flex;
+    justify-content: center;
 }
 
 .img-parques{
-    height: 500px;
+    width: 90%;
 }
 
 .img-entradas{
-    max-width: 1333px;
+    width: 90%;
 }
 
 .img-planes{
-    max-width: 750px;
-    overflow: hidden;
+    max-width: 55vw;
 }
 
 .img-hoteles{
-    max-width: 800px;
-    max-height: 1fr;
+    max-width: 45vw;
     justify-content: flex-start;
     align-items: center;
 }
 
 .img-noticias{
     max-width: 700px;
-    max-height: 1fr;
     justify-content: flex-start;
 }
 
 .img-mdw{
-    max-width: 400px;
+    max-width: 40%;
 }
 
 .section{
@@ -601,7 +600,5 @@
         display: none;
     }
 
-    .index_grids{
-        
-    }
+
 }
